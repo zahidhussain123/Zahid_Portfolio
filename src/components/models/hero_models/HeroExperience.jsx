@@ -29,7 +29,7 @@ const HeroExperience = () => {
         <Particles count={150} />
         <group scale={isMobile ? 0.8 : 1} position={[0, -2, 0]}>
           <FloatingLaptop />
-          <FloatingCards />
+          {/* <FloatingCards /> */}
         </group>
       </Suspense>
     </Canvas>

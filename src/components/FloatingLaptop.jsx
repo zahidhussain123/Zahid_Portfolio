@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 
 const FloatingLaptop = () => {
   const ref = useRef();
-  const { scene } = useGLTF("/models/react_logo-transformed.glb");
+  const { scene } = useGLTF("public/models/Desk.glb");
 
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
@@ -12,7 +12,7 @@ const FloatingLaptop = () => {
     ref.current.position.y = Math.sin(t) * 0.1;
   });
 
-  return <primitive ref={ref} object={scene} scale={1.5} />;
+  return <primitive ref={ref} object={scene} scale={3} />;
 };
 
 export default FloatingLaptop;
