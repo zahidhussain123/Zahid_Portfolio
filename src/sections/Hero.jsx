@@ -57,9 +57,12 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+            {/* <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               Hi, I’m Zahid, a developer with a passion for
               code.
+            </p> */}
+              <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              I'm Zahid, a frontend developer who enjoys creating smooth, user-friendly experiences. Let's turn ideas into real, functional projects.
             </p>
 
             <Button
