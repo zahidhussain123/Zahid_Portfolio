@@ -89,26 +89,31 @@ const abilities = [
   },
 ];
 
+// Updated constants
 const techStackImgs = [
   {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    name: "JavaScript Developer", 
+    imgPath: "/images/logos/jsweb.svg",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "React Developer",
+    imgPath: "/images/logos/react.svg",
+  },
+  {
+    name: "Nextjs Developer",
+    imgPath: "/images/logos/nextjs.svg",
   },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
   },
+  // {
+  //   name: "State Management (Redux)",
+  //   imgPath: "/images/logos/redux.png",
+  // },
   {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    name: "Svelte Developer",
+    imgPath: "/images/logos/svelte.svg",
   },
 ];
 
@@ -143,15 +148,27 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
+  // {
+  //   name: "Svelte.js Developer",
+  //   imgPath: "/images/svelte-icon.svg",
+  //   type: "image",
+  // },
+  // {
+  //   name: "JavaScript",
+  //   imgPath: "/images/js.png",
+  //   type: "image",
+  // },
 ];
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Software Solutions Engineer",
+    // date: "December 2024 - Present",
+    company: "Emdad Solutions",
     responsibilities: [
       "Developed and maintained user-facing features for the Hostinger website.",
       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
@@ -159,11 +176,13 @@ const expCards = [
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Software Engineer",
+    // date: "January 2023 - Present",
+    company: "Business Analytics",
     responsibilities: [
       "Led the development of Docker's web applications, focusing on scalability.",
       "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
@@ -171,11 +190,13 @@ const expCards = [
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Software Developer",
+    // date: "March 2019 - May 2020",
+    company: "Zaxiss",
     responsibilities: [
       "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
       "Improved app performance and user experience through code optimization and testing.",

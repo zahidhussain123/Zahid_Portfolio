@@ -123,7 +123,7 @@ const Experience = () => {
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
+                          &nbsp;{card.company}
                         </p>
                         <p className="text-[#839CB5] italic">
                           Responsibilities
