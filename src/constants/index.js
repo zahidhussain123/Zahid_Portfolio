@@ -92,29 +92,29 @@ const abilities = [
 // Updated constants
 const techStackImgs = [
   {
-    name: "JavaScript Developer", 
+    name: "JavaScript",
     imgPath: "/images/logos/jsweb.svg",
   },
   {
-    name: "React Developer",
+    name: "React",
     imgPath: "/images/logos/react.svg",
   },
   {
-    name: "Nextjs Developer",
-    imgPath: "/images/logos/nextjs.svg",
+    name: "Nextjs",
+    imgPath: "/images/logos/OIP.jpg",
   },
   {
-    name: "Backend Developer",
+    name: "Svelte",
+    imgPath: "/images/logos/svelte.svg",
+  },
+  {
+    name: "Node/Express",
     imgPath: "/images/logos/node.png",
   },
   // {
   //   name: "State Management (Redux)",
   //   imgPath: "/images/logos/redux.png",
   // },
-  {
-    name: "Svelte Developer",
-    imgPath: "/images/logos/svelte.svg",
-  },
 ];
 
 const techStackIcons = [
@@ -222,39 +222,44 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Farhan Ul Haq",
+    mentions: "@farhan-ul-haq",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Zahid has worked with me as a front end React JS developer. From day one, he had demonstrated exceptional professionalism, strong work ethic and a commitment to excellence that consistently exceeded expectations. He has good technical skills. He played a key role in working on in different React JS projects, where his problem-solving ability, creativity and professionalism truly stood out.",
     imgPath: "/images/client1.png",
+    linkedin: "https://www.linkedin.com/in/farhan-ul-haq-502031a4/",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+    name: "Omair Ahmed",
+    mentions: "@ahmed-omair",
+    review: " I’ve had the pleasure of working with Zahid Hussain, and I can confidently say he is an exceptional React developer. Zahid has a deep understanding of modern frontend practices and consistently delivers clean, scalable, and efficient code.He excels at building reusable functional components with hooks, ensuring that applications remain modular and easy to maintain. His expertise in state management using both Redux and Context API allows him to handle complex application flows with ease.One of Zahid’s standout qualities is his focus on performance optimization. From implementing lazy loading to leveraging memoization, he ensures that applications are fast, responsive, and user-friendly. He also has strong experience in building dynamic forms with validations and integrating APIs seamlessly using fetch, Axios, and React Query.Beyond his technical skills, Zahid brings a collaborative and problem-solving mindset to every project. He’s proactive, detail-oriented, and always eager to learn and share knowledge with his peers.I highly recommend Zahid to any team looking for a skilled React developer who can balance technical excellence with practical, real-world application needs.",
     imgPath: "/images/client3.png",
+    linkedin: "https://www.linkedin.com/in/ahmed-omair/",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Asif Mushtaq",
+    mentions: "@asifmushtaq829",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "I’ve had the privilege of working with Zahid on multiple projects, and he consistently brings a thoughtful and professional approach to his work. He is a true team player—collaborative, clear in his communication, and a positive influence on those around him. It has been rewarding to witness his growth, and I am confident he is ready to take on even greater responsibilities in the future. I strongly recommend Zahid for any front-end development role—he would be a valuable asset to any team.",
     imgPath: "/images/client2.png",
+    linkedin: "https://www.linkedin.com/in/asifmushtaq829/",
+
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Muhammad Muttaraf Rasool",
+    mentions: "@muhammad-muttraf-rasool-421819202",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "I’ve had the privilege of working closely with Zahid Hussain on multiple frontend development projects, and he consistently impresses with his deep expertise in React.js. His mastery of component-based architecture, performance optimization, and modern web practices sets him apart. He also excels at quickly adapting to new technologies, delivering high-quality features with the same efficiency in Svelte as he does in React.What truly stands out is Zahid Hussain's ability to solve complex problems with elegant, efficient solutions. He is reliable, always meeting deadlines while maintaining the highest standards of quality. His strong communication and sense of responsibility make him a true asset to any team.",
     imgPath: "/images/client5.png",
+    linkedin: "https://www.linkedin.com/in/muhammad-muttraf-rasool-421819202/",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Muhammad Afrasyab",
+    mentions: "@afrasyab11",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "I had the pleasure of working with Zahid Hussain on a project, and I was thoroughly impressed by his expertise as a Frontend Developer. His technical skills are exceptional, and he consistently delivers high-quality work with great attention to detail. Zahid is also an excellent team player — proactive in communication, highly collaborative, and always ready to support others to achieve project goals. His professionalism, dedication, and problem-solving abilities make him an asset to any team. I would gladly work with him again in the future.",
     imgPath: "/images/client4.png",
+    linkedin: "https://www.linkedin.com/in/afrasyab11/",
   },
   {
     name: "Albert Flores",
