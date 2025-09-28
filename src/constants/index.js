@@ -205,6 +205,133 @@ const expCards = [
   },
 ];
 
+const expCardsWithAlternatives = [
+  {
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logos/emdad_logo.png",
+    title: "Software Solutions Engineer",
+    company: "Emdad Solutions",
+    responsibilities: [
+      "Developed and maintained user-facing features for the Hostinger website.",
+      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
+      "Optimized web applications for maximum speed and scalability.",
+    ],
+    // Option 1 data
+    technologies: [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "AWS",
+      "Docker",
+      "MongoDB",
+    ],
+    // Option 2 data
+    achievements: [
+      "Improved website loading speed by 40%",
+      "Successfully delivered 15+ feature releases",
+      "Reduced bug reports by 60% through better testing",
+    ],
+    // Option 3 data
+    projects: [
+      {
+        name: "Sharek V3",
+        description: "Built responsive shopping cart with payment integration",
+      },
+      {
+        name: "Admin ",
+        description:
+          "Created analytics dashboard with real-time data visualization",
+      },
+    ],
+    // Option 4 data
+    duration: "1 Year",
+    teamSize: "8 People",
+    impact: "Led frontend development that improved user engagement by 35%",
+  },
+  {
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logos/business.png",
+    title: "Software Engineer",
+    company: "Business Analytics",
+    responsibilities: [
+      "Led the development of Docker's web applications, focusing on scalability.",
+      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
+      "Contributed to open-source projects that were used with the Docker ecosystem.",
+    ],
+    // Option 1 data
+    technologies: [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "GraphQL",
+      "Kubernetes",
+      "PostgreSQL",
+    ],
+    // Option 2 data
+    achievements: [
+      "Enhanced application scalability to handle 10x more traffic",
+      "Integrated 20+ APIs for seamless data flow",
+      "Contributed to 5 open-source repositories with 100+ stars combined",
+    ],
+    // Option 3 data
+    projects: [
+      {
+        name: "Scalable Web App Platform",
+        description: "Developed a containerized web app framework for rapid deployment",
+      },
+      {
+        name: "API Integration Hub",
+        description: "Built a centralized hub for managing and monitoring API integrations",
+      },
+    ],
+    // Option 4 data
+    duration: "2+ Years",
+    teamSize: "10 People",
+    impact: "Improved overall system performance and developer productivity by 50%",
+  },
+  {
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logos/zaxiss.jpg",
+    title: "Software Developer",
+    company: "Zaxiss",
+    responsibilities: [
+      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
+      "Improved app performance and user experience through code optimization and testing.",
+      "Coordinated with the product team to implement features based on feedback.",
+    ],
+    // Option 1 data
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "Appwrite",
+      "Firebase",
+      "Redux",
+      "Jest",
+    ],
+    // Option 2 data
+    achievements: [
+      "Optimized app load times by 30%",
+      "Implemented features that increased user retention by 25%",
+      "Conducted thorough testing reducing production bugs by 70%",
+    ],
+    // Option 3 data
+    projects: [
+      {
+        name: "Cross-Platform Mobile App",
+        description: "Developed a mobile app for real-time collaboration using React Native",
+      },
+      {
+        name: "Performance Optimization Suite",
+        description: "Created tools and scripts to monitor and enhance app performance",
+      },
+    ],
+    // Option 4 data
+    duration: "1+ Year",
+    teamSize: "6 People",
+    impact: "Delivered high-quality mobile solutions that met product goals and enhanced user experience",
+  },
+];
+
 const expLogos = [
   {
     name: "logo1",
@@ -232,7 +359,8 @@ const testimonials = [
   {
     name: "Omair Ahmed",
     mentions: "@ahmed-omair",
-    review: " I’ve had the pleasure of working with Zahid Hussain, and I can confidently say he is an exceptional React developer. Zahid has a deep understanding of modern frontend practices and consistently delivers clean, scalable, and efficient code.He excels at building reusable functional components with hooks, ensuring that applications remain modular and easy to maintain. His expertise in state management using both Redux and Context API allows him to handle complex application flows with ease.One of Zahid’s standout qualities is his focus on performance optimization. From implementing lazy loading to leveraging memoization, he ensures that applications are fast, responsive, and user-friendly. He also has strong experience in building dynamic forms with validations and integrating APIs seamlessly using fetch, Axios, and React Query.Beyond his technical skills, Zahid brings a collaborative and problem-solving mindset to every project. He’s proactive, detail-oriented, and always eager to learn and share knowledge with his peers.I highly recommend Zahid to any team looking for a skilled React developer who can balance technical excellence with practical, real-world application needs.",
+    review:
+      " I’ve had the pleasure of working with Zahid Hussain, and I can confidently say he is an exceptional React developer. Zahid has a deep understanding of modern frontend practices and consistently delivers clean, scalable, and efficient code.He excels at building reusable functional components with hooks, ensuring that applications remain modular and easy to maintain. His expertise in state management using both Redux and Context API allows him to handle complex application flows with ease.One of Zahid’s standout qualities is his focus on performance optimization. From implementing lazy loading to leveraging memoization, he ensures that applications are fast, responsive, and user-friendly. He also has strong experience in building dynamic forms with validations and integrating APIs seamlessly using fetch, Axios, and React Query.Beyond his technical skills, Zahid brings a collaborative and problem-solving mindset to every project. He’s proactive, detail-oriented, and always eager to learn and share knowledge with his peers.I highly recommend Zahid to any team looking for a skilled React developer who can balance technical excellence with practical, real-world application needs.",
     imgPath: "/images/client3.png",
     linkedin: "https://www.linkedin.com/in/ahmed-omair/",
   },
@@ -243,7 +371,6 @@ const testimonials = [
       "I’ve had the privilege of working with Zahid on multiple projects, and he consistently brings a thoughtful and professional approach to his work. He is a true team player—collaborative, clear in his communication, and a positive influence on those around him. It has been rewarding to witness his growth, and I am confident he is ready to take on even greater responsibilities in the future. I strongly recommend Zahid for any front-end development role—he would be a valuable asset to any team.",
     imgPath: "/images/client2.png",
     linkedin: "https://www.linkedin.com/in/asifmushtaq829/",
-
   },
   {
     name: "Muhammad Muttaraf Rasool",
@@ -301,4 +428,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  expCardsWithAlternatives,
 };
