@@ -348,6 +348,13 @@ const expLogos = [
 ];
 
 const testimonials = [
+    {
+    name: "Anter Gaber",
+    mentions: "@anter-gaber",
+    review: "I had the chance to work with Zahid during the last year he helped us to re-implement our legacy correspondence management system as a new modern, user friendly and secure application with better performance, Zahid was very supportive and always following best practices during the implementation, he owned the whole front-end layer of the system starting from solution design until we finished implementation and testing.Thank you Zahid for all your support, I was really lucky to work with a professional Senior developer like you.",
+    imgPath: "/images/client1.png",
+    linkedin: "https://www.linkedin.com/in/anter-gaber/",
+  },
   {
     name: "Farhan Ul Haq",
     mentions: "@farhan-ul-haq",
@@ -356,6 +363,7 @@ const testimonials = [
     imgPath: "/images/client1.png",
     linkedin: "https://www.linkedin.com/in/farhan-ul-haq-502031a4/",
   },
+
   {
     name: "Omair Ahmed",
     mentions: "@ahmed-omair",
@@ -387,13 +395,6 @@ const testimonials = [
       "I had the pleasure of working with Zahid Hussain on a project, and I was thoroughly impressed by his expertise as a Frontend Developer. His technical skills are exceptional, and he consistently delivers high-quality work with great attention to detail. Zahid is also an excellent team player — proactive in communication, highly collaborative, and always ready to support others to achieve project goals. His professionalism, dedication, and problem-solving abilities make him an asset to any team. I would gladly work with him again in the future.",
     imgPath: "/images/client4.png",
     linkedin: "https://www.linkedin.com/in/afrasyab11/",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
   },
 ];
 

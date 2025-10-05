@@ -1,6 +1,6 @@
 import { testimonials } from "../constants";
 import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard";
+import TestimonialCard from "../components/TestimonialCard";
 
 const Testimonials = () => {
   return (
@@ -11,19 +11,13 @@ const Testimonials = () => {
           sub="⭐️ Customer feedback highlights"
         />
 
-        <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {testimonials?.map((testimonial, index) => (
-            <GlowCard card={testimonial} key={index} index={index}>
-              <div className="flex items-center gap-3">
-                <div>
-                  <img src={testimonial?.imgPath} alt="" />
-                </div>
-                <div>
-                  <p className="font-bold">{testimonial?.name}</p>
-                  <p className="text-white-50">{testimonial?.mentions}</p>
-                </div>
-              </div>
-            </GlowCard>
+            <TestimonialCard
+              key={index}
+              testimonial={testimonial}
+              index={index}
+            /> 
           ))}
         </div>
       </div>

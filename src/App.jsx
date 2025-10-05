@@ -8,6 +8,7 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import LogoShowcase from "./sections/LogoShowcase";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
+import ColorThemeSelector from "./components/ColorThemeSelector";
 
 const App = () => (
   <>
@@ -21,6 +22,7 @@ const App = () => (
     <Testimonials />
     <Contact />
     <Footer />
+    <ColorThemeSelector />
   </>
 );
 
