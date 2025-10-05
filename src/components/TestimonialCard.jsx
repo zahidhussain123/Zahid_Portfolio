@@ -15,7 +15,7 @@ const InitialsAvatar = ({ name, size = "12" }) => {
   };
 
   return (
-    <div className={`w-${size} h-${size} rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}>
+    <div className={`w-${size} h-${size} p-3 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}>
       {getInitials(name)}
     </div>
   );

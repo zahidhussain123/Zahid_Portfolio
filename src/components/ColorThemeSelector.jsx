@@ -1,19 +1,7 @@
 import { useState, useEffect } from "react";
+import { themes } from "../constants";
 
-const themes = [
-  { name: "Dark", bg: "#000000", id: "dark" },
-  { name: "Deep Blue", bg: "#0a0e27", id: "blue" },
-//   { name: "Purple Night", bg: "#1a0b2e", id: "purple" },
-  { name: "Forest", bg: "#0d1b1e", id: "forest" },
-  { name: "Burgundy", bg: "#1a0a0f", id: "burgundy" },
-//   { name: "Navy", bg: "#0c1445", id: "navy" },
-  { name: "Midnight Teal", bg: "#0f2027", id: "teal" },
-//   { name: "Deep Violet", bg: "#1e0836", id: "violet" },
-  { name: "Charcoal", bg: "#1c1c1c", id: "charcoal" },
-//   { name: "Slate Blue", bg: "#1a1f3a", id: "slate" },
-  { name: "Dark Emerald", bg: "#0a1612", id: "emerald" },
-//   { name: "Cosmic Purple", bg: "#1b0e2e", id: "cosmic" },
-];
+
 
 const ColorThemeSelector = () => {
   const [isOpen, setIsOpen] = useState(false);
