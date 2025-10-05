@@ -1,13 +1,18 @@
-// ColorThemeSelector.jsx
 import { useState, useEffect } from "react";
 
 const themes = [
   { name: "Dark", bg: "#000000", id: "dark" },
   { name: "Deep Blue", bg: "#0a0e27", id: "blue" },
-  { name: "Purple Night", bg: "#1a0b2e", id: "purple" },
+//   { name: "Purple Night", bg: "#1a0b2e", id: "purple" },
   { name: "Forest", bg: "#0d1b1e", id: "forest" },
   { name: "Burgundy", bg: "#1a0a0f", id: "burgundy" },
-  { name: "Navy", bg: "#0c1445", id: "navy" },
+//   { name: "Navy", bg: "#0c1445", id: "navy" },
+  { name: "Midnight Teal", bg: "#0f2027", id: "teal" },
+//   { name: "Deep Violet", bg: "#1e0836", id: "violet" },
+  { name: "Charcoal", bg: "#1c1c1c", id: "charcoal" },
+//   { name: "Slate Blue", bg: "#1a1f3a", id: "slate" },
+  { name: "Dark Emerald", bg: "#0a1612", id: "emerald" },
+//   { name: "Cosmic Purple", bg: "#1b0e2e", id: "cosmic" },
 ];
 
 const ColorThemeSelector = () => {
@@ -25,19 +30,36 @@ const ColorThemeSelector = () => {
   }, []);
 
   const applyTheme = (theme) => {
-    document.body.style.backgroundColor = theme.bg;
+    // Check if it's the same color
+    if (document.body.style.backgroundColor === theme.bg) return;
+
+    // Use GSAP for smooth transition
+    if (window.gsap) {
+      window.gsap.to("body", {
+        backgroundColor: theme.bg,
+        duration: 2.5,
+        ease: "power2.inOut",
+      });
+    } else {
+      // Fallback to CSS transition
+      document.body.style.backgroundColor = theme.bg;
+    }
+
     localStorage.setItem("app-theme", theme.id);
   };
 
   const handleThemeChange = (theme) => {
     setSelectedTheme(theme);
     applyTheme(theme);
-    setIsOpen(false);
+    
+    // Add subtle scale animation to button
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
   };
 
   return (
     <div className="fixed bottom-8 right-8 z-[200]">
-      {/* Color Options Panel */}
       <div
         className={`absolute bottom-16 right-0 bg-black-100 border border-black-50 rounded-2xl p-4 shadow-2xl transition-all duration-500 ${
           isOpen
@@ -47,18 +69,30 @@ const ColorThemeSelector = () => {
       >
         <div className="flex flex-col gap-3 w-48">
           <p className="text-white-50 text-sm font-semibold mb-2">Choose Theme</p>
-          {themes.map((theme) => (
+          {themes?.map((theme) => (
             <button
               key={theme.id}
               onClick={() => handleThemeChange(theme)}
-              className={`group flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:bg-black-50 ${
-                selectedTheme.id === theme.id ? "bg-black-50" : ""
+              className={`group relative flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:bg-black-50 ${
+                selectedTheme.id === theme.id ? "bg-black-50 scale-105" : ""
               }`}
             >
               <div
-                className="w-8 h-8 rounded-lg border-2 border-white-50 shadow-lg transition-transform duration-300 group-hover:scale-110"
+                className={`relative w-8 h-8 rounded-lg border-2 shadow-lg transition-all duration-300 group-hover:scale-110 ${
+                  selectedTheme.id === theme.id 
+                    ? "border-blue-400 shadow-blue-400/50 scale-110" 
+                    : "border-white-50"
+                }`}
                 style={{ backgroundColor: theme.bg }}
-              />
+              >
+                {/* Pulse animation when selected */}
+                {selectedTheme.id === theme.id && (
+                  <div 
+                    className="absolute inset-0 rounded-lg animate-ping opacity-75"
+                    style={{ backgroundColor: theme.bg }}
+                  />
+                )}
+              </div>
               <span className="text-white-50 text-sm font-medium">
                 {theme.name}
               </span>

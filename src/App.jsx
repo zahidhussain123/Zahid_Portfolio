@@ -9,6 +9,7 @@ import LogoShowcase from "./sections/LogoShowcase";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
 import ColorThemeSelector from "./components/ColorThemeSelector";
+// import ColorPalette from "./components/ColorPalette";
 
 const App = () => (
   <>
@@ -19,6 +20,7 @@ const App = () => (
     <FeatureCards />
     <Experience />
     <TechStack />
+    {/* <ColorPalette /> */}
     <Testimonials />
     <Contact />
     <Footer />
