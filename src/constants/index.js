@@ -347,6 +347,21 @@ const expLogos = [
   },
 ];
 
+export const logoIconsLists = [
+  { name: "React", imgPath: "/images/logos/react.svg" },
+  { name: "Nextjs", imgPath: "/images/logos/OIP.jpg" },
+  { name: "JavaScript", imgPath: "/images/logos/jsweb.svg" },
+  { name: "TypeScript", imgPath: "/images/tech/typescript.svg" },
+  { name: "Svelte", imgPath: "/images/logos/svelte.svg" },
+  { name: "Redux", imgPath: "/images/logos/redux.png" },
+  { name: "Tailwind CSS", imgPath: "/images/tech/tailwind.svg" },
+  { name: "Node.js", imgPath: "/images/tech/nodejs.svg" },
+  { name: "Git", imgPath: "/images/tech/git.svg" },
+  { name: "Figma", imgPath: "/images/tech/figma.svg" },
+  { name: "GSAP", imgPath: "/images/tech/gsap.svg" },
+  // Add more...
+];
+
 const testimonials = [
     {
     name: "Anter Gaber",
