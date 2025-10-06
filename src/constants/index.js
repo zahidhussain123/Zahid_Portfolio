@@ -277,17 +277,20 @@ const expCardsWithAlternatives = [
     projects: [
       {
         name: "Scalable Web App Platform",
-        description: "Developed a containerized web app framework for rapid deployment",
+        description:
+          "Developed a containerized web app framework for rapid deployment",
       },
       {
         name: "API Integration Hub",
-        description: "Built a centralized hub for managing and monitoring API integrations",
+        description:
+          "Built a centralized hub for managing and monitoring API integrations",
       },
     ],
     // Option 4 data
     duration: "2+ Years",
     teamSize: "10 People",
-    impact: "Improved overall system performance and developer productivity by 50%",
+    impact:
+      "Improved overall system performance and developer productivity by 50%",
   },
   {
     imgPath: "/images/exp3.png",
@@ -318,17 +321,20 @@ const expCardsWithAlternatives = [
     projects: [
       {
         name: "Cross-Platform Mobile App",
-        description: "Developed a mobile app for real-time collaboration using React Native",
+        description:
+          "Developed a mobile app for real-time collaboration using React Native",
       },
       {
         name: "Performance Optimization Suite",
-        description: "Created tools and scripts to monitor and enhance app performance",
+        description:
+          "Created tools and scripts to monitor and enhance app performance",
       },
     ],
     // Option 4 data
     duration: "1+ Year",
     teamSize: "6 People",
-    impact: "Delivered high-quality mobile solutions that met product goals and enhanced user experience",
+    impact:
+      "Delivered high-quality mobile solutions that met product goals and enhanced user experience",
   },
 ];
 
@@ -363,10 +369,11 @@ export const logoIconsLists = [
 ];
 
 const testimonials = [
-    {
+  {
     name: "Anter Gaber",
     mentions: "@anter-gaber",
-    review: "I had the chance to work with Zahid during the last year he helped us to re-implement our legacy correspondence management system as a new modern, user friendly and secure application with better performance, Zahid was very supportive and always following best practices during the implementation, he owned the whole front-end layer of the system starting from solution design until we finished implementation and testing.Thank you Zahid for all your support, I was really lucky to work with a professional Senior developer like you.",
+    review:
+      "I had the chance to work with Zahid during the last year he helped us to re-implement our legacy correspondence management system as a new modern, user friendly and secure application with better performance, Zahid was very supportive and always following best practices during the implementation, he owned the whole front-end layer of the system starting from solution design until we finished implementation and testing.Thank you Zahid for all your support, I was really lucky to work with a professional Senior developer like you.",
     imgPath: "/images/client1.png",
     linkedin: "https://www.linkedin.com/in/anter-gaber/",
   },
@@ -417,59 +424,148 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
-    url: "https://www.instagram.com/zahid_hosyn?igsh=dHpzOGF4anoyNDdy&utm_source=qr"
+    url: "https://www.instagram.com/zahid_hosyn?igsh=dHpzOGF4anoyNDdy&utm_source=qr",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
-    url: "https://www.facebook.com/share/16pnEatqMB/?mibextid=wwXIfr"
+    url: "https://www.facebook.com/share/16pnEatqMB/?mibextid=wwXIfr",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
-    url: "https://x.com/zahidreacts?s=21"
+    url: "https://x.com/zahidreacts?s=21",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    url: "https://www.linkedin.com/in/zahid-hussain-850a80175/"
+    url: "https://www.linkedin.com/in/zahid-hussain-850a80175/",
   },
   {
     name: "Github",
     imgPath: "/images/github.png",
-    url: "https://github.com/zahidhussain123"
+    url: "https://github.com/zahidhussain123",
   },
 ];
 
 const gradientThemes = [
   { name: "Dark", bg: "#000000", gradient: null, id: "dark" },
-  { name: "Blue Twilight", bg: "linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%)", gradient: true, id: "blue" },
-  { name: "Purple Dreams", bg: "linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%)", gradient: true, id: "purple" },
-  { name: "Deep Ocean", bg: "linear-gradient(135deg, #0d1b1e 0%, #0f2027 100%)", gradient: true, id: "forest" },
-  { name: "Velvet Night", bg: "linear-gradient(135deg, #1a0a0f 0%, #2d1520 100%)", gradient: true, id: "burgundy" },
-  { name: "Cosmic Blue", bg: "linear-gradient(135deg, #0c1445 0%, #1a2a6c 100%)", gradient: true, id: "navy" },
-  { name: "Aurora", bg: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)", gradient: true, id: "teal" },
-  { name: "Galaxy", bg: "linear-gradient(135deg, #1e0836 0%, #2d1b4e 50%, #3a2463 100%)", gradient: true, id: "violet" },
-  { name: "Midnight Fade", bg: "linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%)", gradient: true, id: "charcoal" },
-  { name: "Nebula", bg: "linear-gradient(135deg, #1a1f3a 0%, #2e3a59 50%, #1a1f3a 100%)", gradient: true, id: "slate" },
-  { name: "Emerald Mist", bg: "linear-gradient(135deg, #0a1612 0%, #1a2f26 100%)", gradient: true, id: "emerald" },
-  { name: "Cosmic Void", bg: "linear-gradient(135deg, #1b0e2e 0%, #3d1f5c 50%, #1b0e2e 100%)", gradient: true, id: "cosmic" },
+  {
+    name: "Blue Twilight",
+    bg: "linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%)",
+    gradient: true,
+    id: "blue",
+  },
+  {
+    name: "Purple Dreams",
+    bg: "linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%)",
+    gradient: true,
+    id: "purple",
+  },
+  {
+    name: "Deep Ocean",
+    bg: "linear-gradient(135deg, #0d1b1e 0%, #0f2027 100%)",
+    gradient: true,
+    id: "forest",
+  },
+  {
+    name: "Velvet Night",
+    bg: "linear-gradient(135deg, #1a0a0f 0%, #2d1520 100%)",
+    gradient: true,
+    id: "burgundy",
+  },
+  {
+    name: "Cosmic Blue",
+    bg: "linear-gradient(135deg, #0c1445 0%, #1a2a6c 100%)",
+    gradient: true,
+    id: "navy",
+  },
+  {
+    name: "Aurora",
+    bg: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
+    gradient: true,
+    id: "teal",
+  },
+  {
+    name: "Galaxy",
+    bg: "linear-gradient(135deg, #1e0836 0%, #2d1b4e 50%, #3a2463 100%)",
+    gradient: true,
+    id: "violet",
+  },
+  {
+    name: "Midnight Fade",
+    bg: "linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%)",
+    gradient: true,
+    id: "charcoal",
+  },
+  {
+    name: "Nebula",
+    bg: "linear-gradient(135deg, #1a1f3a 0%, #2e3a59 50%, #1a1f3a 100%)",
+    gradient: true,
+    id: "slate",
+  },
+  {
+    name: "Emerald Mist",
+    bg: "linear-gradient(135deg, #0a1612 0%, #1a2f26 100%)",
+    gradient: true,
+    id: "emerald",
+  },
+  {
+    name: "Cosmic Void",
+    bg: "linear-gradient(135deg, #1b0e2e 0%, #3d1f5c 50%, #1b0e2e 100%)",
+    gradient: true,
+    id: "cosmic",
+  },
 ];
 
 const themes = [
   { name: "Dark", bg: "#000000", id: "dark" },
   { name: "Deep Blue", bg: "#0a0e27", id: "blue" },
-//   { name: "Purple Night", bg: "#1a0b2e", id: "purple" },
+  //   { name: "Purple Night", bg: "#1a0b2e", id: "purple" },
   { name: "Forest", bg: "#0d1b1e", id: "forest" },
   { name: "Burgundy", bg: "#1a0a0f", id: "burgundy" },
-//   { name: "Navy", bg: "#0c1445", id: "navy" },
+  //   { name: "Navy", bg: "#0c1445", id: "navy" },
   { name: "Midnight Teal", bg: "#0f2027", id: "teal" },
-//   { name: "Deep Violet", bg: "#1e0836", id: "violet" },
+  //   { name: "Deep Violet", bg: "#1e0836", id: "violet" },
   { name: "Charcoal", bg: "#1c1c1c", id: "charcoal" },
-//   { name: "Slate Blue", bg: "#1a1f3a", id: "slate" },
+  //   { name: "Slate Blue", bg: "#1a1f3a", id: "slate" },
   { name: "Dark Emerald", bg: "#0a1612", id: "emerald" },
-//   { name: "Cosmic Purple", bg: "#1b0e2e", id: "cosmic" },
+  //   { name: "Cosmic Purple", bg: "#1b0e2e", id: "cosmic" },
 ];
+
+const techStack = {
+  frontend: [
+    { name: "React", icon: "react" },
+    { name: "Next.js", icon: "nextjs" },
+    { name: "Svelte.js", icon: "svelte" },
+    { name: "JavaScript", icon: "js" },
+    { name: "TypeScript", icon: "ts" },
+    { name: "HTML5", icon: "html" },
+    { name: "CSS3", icon: "css" },
+  ],
+  uiDesign: [
+    { name: "Tailwind CSS", icon: "tailwind" },
+    { name: "Bootstrap", icon: "bootstrap" },
+    { name: "Material-UI", icon: "materialui" },
+    { name: "SCSS", icon: "scss" },
+    { name: "Figma", icon: "figma" },
+  ],
+  backend: [
+    { name: "Node.js", icon: "nodejs" },
+    { name: "MongoDB", icon: "mongodb" },
+    // { name: "MySQL", icon: "mysql" },
+  ],
+  devOps: [
+    { name: "Redux", icon: "redux" },
+    { name: "React Query", icon: "reactquery" },
+    // { name: "React Query", iconUrl: true },
+    { name: "Vercel", icon: "vercel" },
+    { name: "Netlify", icon: "netlify" },
+    { name: "Git", icon: "git" },
+    { name: "GitHub", icon: "github" },
+  ],
+};
+
 
 export {
   words,
@@ -484,5 +580,6 @@ export {
   techStackImgs,
   navLinks,
   expCardsWithAlternatives,
-  themes
+  themes,
+  techStack,
 };

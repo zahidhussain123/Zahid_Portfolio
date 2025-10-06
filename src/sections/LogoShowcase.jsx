@@ -1,78 +1,85 @@
-import { useState } from "react";
+import CategorySection from "../components/CategorySection";
+import { techStack } from "../constants";
 
-// Using Skill Icons CDN - no downloads needed!
-const techStack = [
-  { name: "React", icon: "react" },
-  { name: "JavaScript", icon: "js" },
-  { name: "TypeScript", icon: "ts" },
-  { name: "Tailwind CSS", icon: "tailwind" },
-  { name: "Node.js", icon: "nodejs" },
-  { name: "Next.js", icon: "nextjs" },
-  { name: "Git", icon: "git" },
-  { name: "GitHub", icon: "github" },
-  { name: "Figma", icon: "figma" },
-  { name: "VS Code", icon: "vscode" },
-  { name: "HTML5", icon: "html" },
-  { name: "CSS3", icon: "css" },
-  { name: "MongoDB", icon: "mongodb" },
-  { name: "PostgreSQL", icon: "postgres" },
-  { name: "Docker", icon: "docker" },
-  { name: "AWS", icon: "aws" },
-];
-
-const LogoIcon = ({ tech }) => {
-  const [showTooltip, setShowTooltip] = useState(false);
-  const iconUrl = `https://skillicons.dev/icons?i=${tech.icon}&theme=dark`;
-
+const LogoShowcase = () => {
   return (
-    <div 
-      className="flex-none flex-center marquee-item relative group"
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-    >
-      <img 
-        src={iconUrl}
-        alt={tech.name}
-        className="transition-all duration-300 group-hover:scale-110 w-12 h-12 md:w-16 md:h-16"
-        loading="lazy"
-      />
-      
-      {/* Tooltip */}
-      {showTooltip && (
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-black-100 border border-black-50 px-3 py-2 rounded-lg whitespace-nowrap z-50">
-          <p className="text-white-50 text-sm font-medium">{tech.name}</p>
-          <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black-100 border-l border-t border-black-50 rotate-45" />
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-16 relative overflow-hidden">
+      {/* Subtle background particles for stun factor */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+        <div className="absolute top-40 right-20 w-3 h-3 bg-purple-400 rounded-full animate-ping delay-1000"></div>
+        <div className="absolute bottom-32 left-1/4 w-1 h-1 bg-green-400 rounded-full animate-ping delay-2000"></div>
+        <div className="absolute bottom-20 right-10 w-2 h-2 bg-orange-400 rounded-full animate-ping delay-3000"></div>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.333%); }
+        }
+        @keyframes marquee-reverse {
+          0% { transform: translateX(-33.333%); }
+          100% { transform: translateX(0); }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+        .animate-marquee-reverse {
+          animation: marquee-reverse 25s linear infinite;
+        }
+        .animate-marquee:hover,
+        .animate-marquee-reverse:hover {
+          animation-play-state: paused;
+        }
+        @keyframes glow-pulse {
+          0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+          50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+        }
+        .glow-pulse { animation: glow-pulse 2s ease-in-out infinite; }
+      `}</style>
+
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            Technologies & Tools
+          </h2>
+          <p className="text-gray-400 text-lg md:text-xl">
+            Powering modern web experiences with cutting-edge stack
+          </p>
         </div>
-      )}
+
+        <div className="space-y-8 w-full">
+          <CategorySection 
+            title="Frontend Development" 
+            techs={techStack.frontend}
+            color="bg-blue-500"
+            direction="forward"
+          />
+          
+          <CategorySection 
+            title="UI/UX Design" 
+            techs={techStack.uiDesign}
+            color="bg-purple-500"
+            direction="reverse"
+          />
+          
+          <CategorySection 
+            title="Backend Development" 
+            techs={techStack.backend}
+            color="bg-green-500"
+            direction="forward"
+          />
+          
+          <CategorySection 
+            title="DevOps & Tools" 
+            techs={techStack.devOps}
+            color="bg-orange-500"
+            direction="reverse"
+          />
+        </div>
+      </div>
     </div>
   );
 };
-
-const LogoShowcase = () => (
-  <div className="md:my-20 my-10 relative">
-    {/* Section Header */}
-    <div className="text-center mb-12 px-5">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
-        Technologies & Tools
-      </h2>
-      <p className="text-white-50 text-lg">
-        Powering modern web experiences
-      </p>
-    </div>
-
-    <div className="gradient-edge" />
-    <div className="gradient-edge" />
-    <div className="marquee h-52">
-      <div className="marquee-box md:gap-12 gap-5">
-        {techStack.map((tech, index) => (
-          <LogoIcon key={`first-${index}`} tech={tech} />
-        ))}
-        {techStack.map((tech, index) => (
-          <LogoIcon key={`second-${index}`} tech={tech} />
-        ))}
-      </div>
-    </div>
-  </div>
-);
 
 export default LogoShowcase;
