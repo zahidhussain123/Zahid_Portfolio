@@ -12,12 +12,12 @@ const Footer = () => {
             <div className="icon">
               <a
                 key={index}
-                href={socialImg.url}
+                href={socialImg?.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon hover:scale-110 transition-transform duration-300"
               >
-                <img src={socialImg.imgPath} alt="social icon" />
+                <img src={socialImg?.imgPath} alt="social icon" />
               </a>
             </div>
           ))}

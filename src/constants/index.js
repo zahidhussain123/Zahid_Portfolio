@@ -434,6 +434,11 @@ const socialImgs = [
     imgPath: "/images/linkedin.png",
     url: "https://www.linkedin.com/in/zahid-hussain-850a80175/"
   },
+  {
+    name: "Github",
+    imgPath: "/images/github.png",
+    url: "https://github.com/zahidhussain123"
+  },
 ];
 
 const gradientThemes = [

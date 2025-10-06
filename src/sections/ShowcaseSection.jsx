@@ -48,8 +48,8 @@ const AppShowcase = () => {
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/sharek-inbox.png" alt="Sharek" />
+            <div className="image-wrapper bg-[#FFEFDB] rounded-lg">
+              <img src="/images/sharekkkk.gif" className="!object-contain" alt="Sharek" />
             </div>
             <div className="text-content">
               <h2>
@@ -67,8 +67,8 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/gig-admin.png"
-                  alt="Library Management Platform"
+                  src="/images/admin-portal.gif"
+                  alt="GIG Management Platform"
                 />
               </div>
               <h2>GIG - Insurance Management</h2>
