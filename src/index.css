@@ -488,3 +488,17 @@ section {
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
+
+@keyframes spark-burst {
+  0% { box-shadow: 0 0 0 rgba(59, 130, 246, 0); }
+  50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.4); }
+  100% { box-shadow: 0 0 0 rgba(59, 130, 246, 0); }
+}
+.spark-burst { animation: spark-burst 0.6s ease-out; }
+.animate-glow {
+  animation: glow-pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 10px currentColor;
+}
+.animate-orbit {
+  animation: orbit 4s linear infinite;
+}

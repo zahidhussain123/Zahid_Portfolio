@@ -535,34 +535,31 @@ const themes = [
 
 const techStack = {
   frontend: [
-    { name: "React", icon: "react" },
-    { name: "Next.js", icon: "nextjs" },
-    { name: "Svelte.js", icon: "svelte" },
-    { name: "JavaScript", icon: "js" },
-    { name: "TypeScript", icon: "ts" },
-    { name: "HTML5", icon: "html" },
-    { name: "CSS3", icon: "css" },
+    { name: "React", icon: "react", proficiency: 95 },
+    { name: "Next.js", icon: "nextjs", proficiency: 90 },
+    { name: "Svelte.js", icon: "svelte", proficiency: 80 },
+    { name: "JavaScript", icon: "js", proficiency: 100 },
+    { name: "TypeScript", icon: "ts", proficiency: 85 },
+    { name: "HTML5", icon: "html", proficiency: 100 },
+    { name: "CSS3", icon: "css", proficiency: 95 },
   ],
   uiDesign: [
-    { name: "Tailwind CSS", icon: "tailwind" },
-    { name: "Bootstrap", icon: "bootstrap" },
-    { name: "Material-UI", icon: "materialui" },
-    { name: "SCSS", icon: "scss" },
-    { name: "Figma", icon: "figma" },
+    { name: "Tailwind CSS", icon: "tailwind", proficiency: 90 },
+    { name: "Bootstrap", icon: "bootstrap", proficiency: 75 },
+    { name: "Material-UI", icon: "materialui", proficiency: 80 },
+    { name: "SCSS", icon: "scss", proficiency: 85 },
+    { name: "Figma", icon: "figma", proficiency: 70 },
   ],
   backend: [
-    { name: "Node.js", icon: "nodejs" },
-    { name: "MongoDB", icon: "mongodb" },
-    // { name: "MySQL", icon: "mysql" },
+    { name: "Node.js", icon: "nodejs", proficiency: 85 },
+    { name: "MongoDB", icon: "mongodb", proficiency: 80 },
+    { name: "MySQL", icon: "mysql", proficiency: 75 },
   ],
   devOps: [
-    { name: "Redux", icon: "redux" },
-    { name: "React Query", icon: "reactquery" },
-    // { name: "React Query", iconUrl: true },
-    { name: "Vercel", icon: "vercel" },
-    { name: "Netlify", icon: "netlify" },
-    { name: "Git", icon: "git" },
-    { name: "GitHub", icon: "github" },
+    { name: "Redux", icon: "redux", proficiency: 90 },
+    { name: "React Query", icon: "reactquery", proficiency: 85 }, // Uses custom URL from before
+    { name: "Git", icon: "git", proficiency: 100 },
+    { name: "GitHub", icon: "github", proficiency: 100 },
   ],
 };
 
