@@ -535,29 +535,28 @@ const themes = [
 
 const techStack = {
   frontend: [
-    { name: "React", icon: "react", proficiency: 95 },
-    { name: "Next.js", icon: "nextjs", proficiency: 90 },
-    { name: "Svelte.js", icon: "svelte", proficiency: 80 },
-    { name: "JavaScript", icon: "js", proficiency: 100 },
+    { name: "React", icon: "react", proficiency: 90 },
+    { name: "Next.js", icon: "nextjs", proficiency: 80 },
+    { name: "Svelte.js", icon: "svelte", proficiency: 60 },
+    { name: "JavaScript", icon: "js", proficiency: 70 },
     { name: "TypeScript", icon: "ts", proficiency: 85 },
     { name: "HTML5", icon: "html", proficiency: 100 },
     { name: "CSS3", icon: "css", proficiency: 95 },
   ],
   uiDesign: [
     { name: "Tailwind CSS", icon: "tailwind", proficiency: 90 },
-    { name: "Bootstrap", icon: "bootstrap", proficiency: 75 },
+    { name: "Bootstrap", icon: "bootstrap", proficiency: 90 },
     { name: "Material-UI", icon: "materialui", proficiency: 80 },
-    { name: "SCSS", icon: "scss", proficiency: 85 },
+    { name: "SCSS", icon: "scss", proficiency: 80 },
     { name: "Figma", icon: "figma", proficiency: 70 },
   ],
   backend: [
-    { name: "Node.js", icon: "nodejs", proficiency: 85 },
-    { name: "MongoDB", icon: "mongodb", proficiency: 80 },
-    { name: "MySQL", icon: "mysql", proficiency: 75 },
+    { name: "Node.js", icon: "nodejs", proficiency: 70 },
+    { name: "MongoDB", icon: "mongodb", proficiency: 70 },
   ],
   devOps: [
     { name: "Redux", icon: "redux", proficiency: 90 },
-    { name: "React Query", icon: "reactquery", proficiency: 85 }, // Uses custom URL from before
+    { name: "React Query", icon: "reactquery", proficiency: 85 }, 
     { name: "Git", icon: "git", proficiency: 100 },
     { name: "GitHub", icon: "github", proficiency: 100 },
   ],
