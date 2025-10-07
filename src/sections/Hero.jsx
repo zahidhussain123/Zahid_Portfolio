@@ -74,7 +74,7 @@ const Hero = () => {
         </header>
       </div>
 
-      <AnimatedCounter />
+      {/* <AnimatedCounter /> */}
     </section>
   );
 };

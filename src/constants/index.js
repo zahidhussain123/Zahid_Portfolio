@@ -555,13 +555,157 @@ const techStack = {
     { name: "MongoDB", icon: "mongodb", proficiency: 70 },
   ],
   devOps: [
+    { name: "Clerk", icon: "clerk", proficiency: 50 },
+    { name: "NextAuth", icon: "nextauth", proficiency: 40 },
     { name: "Redux", icon: "redux", proficiency: 90 },
-    { name: "React Query", icon: "reactquery", proficiency: 85 }, 
+    { name: "React Query", icon: "reactquery", proficiency: 85 },
     { name: "Git", icon: "git", proficiency: 100 },
     { name: "GitHub", icon: "github", proficiency: 100 },
   ],
 };
 
+const expertise = {
+  Frontend: {
+    icon: "⚛️",
+    color: "from-cyan-400 to-blue-500",
+    items: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Svelte",
+      "Redux",
+      "React Query",
+      "useSWR",
+    ],
+    description: "Building dynamic, performant user interfaces",
+  },
+  Styling: {
+    icon: "🎨",
+    color: "from-blue-400 to-pink-400",
+    items: [
+      "TailwindCSS",
+      "Bootstrap",
+      "MaterialUI",
+      "Styled-Components",
+      "SASS",
+      "Framer Motion",
+    ],
+    description: "Creating stunning, responsive designs",
+  },
+  Backend: {
+    icon: "⚙️",
+    color: "from-green-400 to-emerald-500",
+    items: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      // "MySQL",
+      "REST APIs",
+      // "GraphQL",
+    ],
+    description: "Architecting robust server solutions",
+  },
+  Tools: {
+    icon: "🛠️",
+    color: "from-orange-400 to-red-500",
+    items: [
+      "Clerk",
+      "NextAuth",
+      "Git",
+      "Vercel",
+      // "Docker",
+      // "AI Integration",
+      "Performance Optimization",
+    ],
+    description: "Leveraging modern development tools",
+  },
+};
+
+const achievements = [
+  {
+    icon: "🏆",
+    title: "Enterprise Solutions",
+    // desc: "Led development of 10+ enterprise platforms",
+    color: "from-yellow-400 to-orange-500",
+  },
+  {
+    icon: "⚡",
+    title: "Performance Optimizations",
+    // desc: "Optimized apps achieving 99.9% uptime",
+    color: "from-cyan-400 to-blue-500",
+  },
+  {
+    icon: "🎯",
+    title: "AI Integration",
+    // desc: "Implemented AI-powered features in SaaS platforms",
+    color: "from-purple-400 to-pink-500",
+  },
+  {
+    icon: "📈",
+    title: "Scalability Pro",
+    // desc: "Architected solutions handling 100K+ users",
+    color: "from-green-400 to-emerald-500",
+  },
+];
+
+const featuredProjects = [
+  {
+    name: "Sharek(V3) KFU",
+    description: "Legacy Correspondance Management System",
+    tech: ["React", "ContextApi", "React Table", "Tailwind CSS", "more..."],
+    // impact: "Streamlined workflows for 500+ users",
+    gradient: "from-cyan-500 to-blue-500",
+    level: "Departmental",
+  },
+  {
+    name: "Lusso Labs",
+    description: "AI-Powered Content Creation & Scheduling Posts Platform",
+    tech: [
+      "React",
+      "Context API",
+      "Redux",
+      "Mantine",
+      "AI Integrations",
+      "Tailwind CSS",
+      "more...",
+    ],
+    // impact: "Automated content creation for 1000+ creators",
+    gradient: "from-purple-500 to-pink-500",
+    level: "Enterprise",
+  },
+
+  {
+    name: "GIG Admin Portal",
+    description: "Insurance Management Platform",
+    tech: [
+      "Nextjs",
+      "TypeScript",
+      "ContextApi",
+      "Redux",
+      "React Query",
+      "Tailwind CSS",
+      "more...",
+    ],
+    // impact: "Processed 10K+ policies efficiently",
+    gradient: "from-green-500 to-emerald-500",
+    level: "Enterprise",
+  },
+  {
+    name: "Helpdesk application (Kuwait Fund)",
+    description: "Internal Support Request Management System",
+    tech: ["React", "Typescript", "React Query", "Bootstrap", "more..."],
+    // impact: "Managed financial operations seamlessly",
+    gradient: "from-orange-500 to-red-500",
+    level: "Departmental",
+  },
+];
+
+const journeyMilestones = [
+  { year: "2021", event: "Started Coding Journey", icon: "🚀" },
+  { year: "2022", event: "First Enterprise Project", icon: "🏢" },
+  { year: "2023", event: "Reactjs Mastery", icon: "💻" },
+  { year: "2024", event: "Nodejs & MongoDB", icon: "🤖" },
+];
 
 export {
   words,
@@ -578,4 +722,8 @@ export {
   expCardsWithAlternatives,
   themes,
   techStack,
+  journeyMilestones,
+  featuredProjects,
+  achievements,
+  expertise,
 };
