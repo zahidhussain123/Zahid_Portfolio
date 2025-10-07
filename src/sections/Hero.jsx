@@ -62,7 +62,7 @@ const Hero = () => {
               code.
             </p> */}
               <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              I'm Zahid, a frontend developer who enjoys creating smooth, user-friendly experiences. Let's turn ideas into real, functional projects.
+              I'm Zahid Hussain, a frontend developer who enjoys creating smooth, user-friendly experiences. Let's turn ideas into real, functional projects.
             </p>
 
             <Button

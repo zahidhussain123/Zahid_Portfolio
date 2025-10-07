@@ -10,7 +10,7 @@ const LogoShowcase = () => {
   }, []);
 
   return (
-    <div className="min-h-screen  py-16 relative overflow-hidden">
+    <div id="skills" className="min-h-screen  py-16 relative overflow-hidden">
       {/* Enhanced Particles: More nodes, category-synced colors */}
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         {[
