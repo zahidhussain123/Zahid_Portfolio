@@ -216,25 +216,23 @@ const expCardsWithAlternatives = [
     title: "Software Solutions Engineer",
     company: "Emdad Solutions",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
+      "Designed a responsive, user-friendly interface accessible across devices,improving employee satisfaction scores by 15%",
       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
+      "Integrated RESTful APIs for message CRUD operations, user authentication, and employee directory lookup.",
+      "Developed message forwarding and CC functionality with multi-recipient selection interface.",
       "Optimized web applications for maximum speed and scalability.",
+      "Implemented encription, authentication and role-based access control using cryptojs for secure user management.",
     ],
     // Option 1 data
-    technologies: [
-      "React",
-      "Node.js",
-      "TypeScript",
-      "AWS",
-      "Docker",
-      "MongoDB",
-    ],
+    technologies: ["React", "TypeScript", "MongoDB"],
     // Option 2 data
     achievements: [
-      "Improved website loading speed by 40%",
-      "Successfully delivered 15+ feature releases",
-      "Reduced bug reports by 60% through better testing",
+      "Improved website loading speed by 40% through code optimization and lazy loading.",
+      "Delivered 15+ feature releases on schedule, maintaining high client satisfaction.",
+      "Reduced bug reports by 60% through better testing and QA collaboration.",
+      "Enhanced system security with robust encryption and authentication logic.",
     ],
+
     // Option 3 data
     projects: [
       {
@@ -258,25 +256,22 @@ const expCardsWithAlternatives = [
     title: "Software Engineer",
     company: "Business Analytics",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
+      "Designed and developed a user-friendly React.js interface for managing and tracking internal employee requests for office equipment and resources.",
       "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed and maintained a sales and admin portal for an insurance company in Kuwait, facilitating the sale and management of insurance policies",
+      "Accomplished every task in time and actively communicated with the clients during meeting time",
+      "Implemented authentication and role-based access control using NextAuth.js and Clerk for secure user management.",
     ],
     // Option 1 data
-    technologies: [
-      "React.js",
-      "Next.js",
-      "JavaScript",
-      "GraphQL",
-      "Kubernetes",
-      "PostgreSQL",
-    ],
+    technologies: ["React.js", "Next.js", "JavaScript"],
     // Option 2 data
     achievements: [
-      "Enhanced application scalability to handle 10x more traffic",
-      "Integrated 20+ APIs for seamless data flow",
-      "Contributed to 5 open-source repositories with 100+ stars combined",
+      "Enhanced application scalability to handle increased user traffic efficiently.",
+      "Integrated 20+ APIs to streamline frontend–backend data communication.",
+      "Improved system stability and reduced frontend errors by 35% through code refactoring.",
+      "Played a key role in redesigning internal tools, improving usability and workflow efficiency.",
     ],
+
     // Option 3 data
     projects: [
       {
@@ -302,9 +297,9 @@ const expCardsWithAlternatives = [
     title: "Software Developer",
     company: "Zaxiss",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
+      "Enhanced performance through lazy loading, code splitting, and memoization, improving page load time by 25%",
       "Coordinated with the product team to implement features based on feedback.",
+      "Participated in Agile sprints, daily standups, and code reviews to ensure timely, high-quality delivery",
     ],
     // Option 1 data
     technologies: [
@@ -317,10 +312,11 @@ const expCardsWithAlternatives = [
     ],
     // Option 2 data
     achievements: [
-      "Optimized app load times by 30%",
-      "Implemented features that increased user retention by 25%",
-      "Conducted thorough testing reducing production bugs by 70%",
+      "Optimized application performance, reducing load times by 30%.",
+      "Conducted thorough testing, reducing production bugs by 70%.",
+      "Collaborated in a cross-functional team to deliver high-quality app updates on time.",
     ],
+
     // Option 3 data
     projects: [
       {

@@ -480,6 +480,7 @@ useEffect(() => {
                     src="/images/zahid_ofc.png"
                     alt="Zahid Hussain"
                     className="w-full h-96 object-cover rounded-3xl transform group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent rounded-3xl" />
@@ -537,7 +538,7 @@ useEffect(() => {
                 {
                   icon: "📍",
                   label: "Location",
-                  value: "Pakistan",
+                  value: "Hybrid (Remote/On-site)",
                   color: "from-green-400 to-emerald-500",
                 },
                 {
@@ -552,12 +553,12 @@ useEffect(() => {
                   value: "Open for Projects",
                   color: "from-purple-400 to-pink-500",
                 },
-                {
-                  icon: "🚀",
-                  label: "Specialty",
-                  value: "Enterprise SaaS",
-                  color: "from-orange-400 to-red-500",
-                },
+                // {
+                //   icon: "🚀",
+                //   label: "Specialty",
+                //   value: "Enterprise SaaS",
+                //   color: "from-orange-400 to-red-500",
+                // },
               ]?.map((item, idx) => (
                 <div
                   key={idx}
