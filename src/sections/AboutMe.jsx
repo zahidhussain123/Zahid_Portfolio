@@ -19,7 +19,7 @@ const AboutMe = () => {
   const [activeSkillCategory, setActiveSkillCategory] = useState("Frontend");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
+useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -27,9 +27,31 @@ const AboutMe = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   useGSAP(() => {
-    gsap.fromTo(
-      sectionRef.current,
+    // Only run animations if section is in view
+    if (!isInView) return;
+
+    // Section entrance animation with better trigger
+    gsap.fromTo(sectionRef.current, 
       { opacity: 0, y: 50 },
       {
         opacity: 1,
@@ -38,67 +60,67 @@ const AboutMe = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
-        },
+          start: "top 90%",
+          toggleActions: "play none none reverse"
+        }
       }
     );
 
-    gsap.fromTo(
-      ".about-content-item",
+    // Content stagger animation with immediate trigger when in viewport
+    gsap.fromTo(".about-content-item",
       { opacity: 0, y: 30 },
       {
         opacity: 1,
         y: 0,
-        stagger: 0.2,
-        duration: 1,
+        stagger: 0.15,
+        duration: 0.8,
         ease: "power2.out",
         scrollTrigger: {
           trigger: contentRef.current,
-          start: "top 70%",
-          toggleActions: "play none none reverse",
-        },
+          start: "top 85%",
+          toggleActions: "play none none reverse"
+        }
       }
     );
 
-    gsap.fromTo(
-      imageRef.current,
-      { scale: 0.8, opacity: 0, rotationY: 10 },
+    // Image reveal animation with earlier trigger
+    gsap.fromTo(imageRef.current,
+      { scale: 0.9, opacity: 0, rotationY: 5 },
       {
         scale: 1,
         opacity: 1,
         rotationY: 0,
-        duration: 1.5,
+        duration: 1.2,
         ease: "power3.out",
         scrollTrigger: {
           trigger: imageRef.current,
-          start: "top 75%",
-          toggleActions: "play none none reverse",
-        },
+          start: "top 85%",
+          toggleActions: "play none none reverse"
+        }
       }
     );
 
-    gsap.fromTo(
-      ".stat-number",
+    // Stats counter animation with immediate trigger
+    gsap.fromTo(".stat-number",
       { textContent: 0 },
       {
-        textContent: (i, target) => parseInt(target.getAttribute("data-value")),
+        textContent: (i, target) => parseInt(target.getAttribute('data-value')),
         duration: 2,
         ease: "power2.out",
         snap: { textContent: 1 },
-        stagger: 0.3,
+        stagger: 0.2,
         scrollTrigger: {
           trigger: statsRef.current,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
-        },
+          start: "top 90%",
+          toggleActions: "play none none reverse"
+        }
       }
     );
-  }, []);
+  }, [isInView]);
 
   return (
     <section
-      id="about"
+      id="aboutme"
       ref={sectionRef}
       className="min-h-screen relative overflow-hidden py-20"
     >
