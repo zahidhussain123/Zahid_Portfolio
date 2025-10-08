@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client'
 
 import './index.css'
 import App from './App.jsx'
-import { ColorProvider } from './context/colorContext.jsx'
+// import { ColorProvider } from './context/colorContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ColorProvider>
+    {/* <ColorProvider> */}
     <App />
-    </ColorProvider>
+    {/* </ColorProvider> */}
   </StrictMode>,
 )
