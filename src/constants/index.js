@@ -167,7 +167,7 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      "Zahid’s brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Software Solutions Engineer",
@@ -181,7 +181,7 @@ const expCards = [
   },
   {
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Zahid’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Software Engineer",
@@ -195,7 +195,7 @@ const expCards = [
   },
   {
     review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      "Zahid’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "Software Developer",
@@ -656,6 +656,13 @@ const featuredProjects = [
     // impact: "Streamlined workflows for 500+ users",
     gradient: "from-cyan-500 to-blue-500",
     level: "Departmental",
+    icon: "🏛️",
+    features: [
+      "Referral management system",
+      "Inbox with message forwarding",
+      "Analytics & reporting",
+      "Role-based access control",
+    ],
   },
   {
     name: "Lusso Labs",
@@ -672,6 +679,16 @@ const featuredProjects = [
     // impact: "Automated content creation for 1000+ creators",
     gradient: "from-purple-500 to-pink-500",
     level: "Enterprise",
+    icon: "🤖",
+    features: [
+      "AI-powered content generation",
+      "Scheduling Post",
+      "Social media integrations",
+      "Creator management system",
+      "Analytics dashboard",
+      "Role-based access control",
+      // "more...",
+    ],
   },
 
   {
@@ -689,6 +706,14 @@ const featuredProjects = [
     // impact: "Processed 10K+ policies efficiently",
     gradient: "from-green-500 to-emerald-500",
     level: "Enterprise",
+    icon: "📊",
+    features: [
+      "Policy Details Managemen",
+      "Claim tracking system",
+      "B2B corporate portal",
+      "Data visualization",
+      "Role-based access control",
+    ],
   },
   {
     name: "Helpdesk application (Kuwait Fund)",
@@ -697,6 +722,14 @@ const featuredProjects = [
     // impact: "Managed financial operations seamlessly",
     gradient: "from-orange-500 to-red-500",
     level: "Departmental",
+    icon: "💰",
+    features: [
+      "Group & user management",
+      "Request workflow automation",
+      "Ticketing system",
+      "Transaction management",
+      "Reporting & analytics",
+    ],
   },
 ];
 
